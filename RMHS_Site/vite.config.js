@@ -201,6 +201,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: '/RMHS-Coding-Club/',
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
